@@ -68,6 +68,7 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .background {
@@ -79,19 +80,21 @@ h1 {
     }
 
     h1 {
-        font-size: 2.5rem; 
-        line-height: 1.2; 
+        font-size: 2rem; 
+        line-height: 1; 
+        margin-bottom: 5px;
     }
 
-    p {
-        font-size: 1.2rem; 
+    .subtitle {
+        font-size: 1.2rem; /* Reduce subtitle */
     }
 
     .text-overlay {
         width: 100%;
         padding: 20px;
-        position: relative; 
-        z-index: 2; 
+        position: absolute; 
+        z-index: 2;
+        text-align: left; /* Align text to the left */
     }
 
     body {
@@ -106,5 +109,20 @@ h1 {
         text-align: center;
         background-color: black;
         color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        left: 5%;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Even smaller for very small screens */
+    }
+
+    .subtitle {
+        font-size: 1rem;
     }
 }
