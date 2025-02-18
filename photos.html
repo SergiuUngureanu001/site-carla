@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="styles/photos.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="repertory.html">Repertory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="close-btn" onclick="toggleMenu()">✖</div>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="repertory.html">Repertory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="gallery">
+        <img src="photos/photo1.JPEG" alt="Photo 1">
+        <img src="photos/photo7.jpg" alt="Photo 3">
+        <img src="photos/photo5.jpeg" alt="Photo 4">
+        <img src="photos/photo3.jpeg" alt="Photo 5">
+        <img src="photos/photo9.jpg" alt="Photo 4">
+        <img src="photos/photo10.jpg" alt="Photo 5">
+        <img src="photos/photo11.jpg" alt="Photo 6">
+        <img src="photos/photo4.jpeg" alt="Photo 6">
+        <img src="photos/p1.JPG" alt="Photo 6">
+        <img src="photos/p2.JPG" alt="Photo 6">
+        <img src="photos/p3.JPG" alt="Photo 6">
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 BY CARLA UNGUREANU</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/18RVQHhXHW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/@aungureanu1" target="_blank" aria-label="Youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="nav-bar.js"></script>
+</body>
+</html>

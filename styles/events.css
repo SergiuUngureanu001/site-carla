@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    background-color: #d3d3d3; 
+    text-align: center;
+}
+
+.big-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Adjust width */
+    margin: 0 auto; /* Center content */
+}
+
+.span-event {
+    display: block; /* Ensures it behaves as a block element */
+    margin-top: 80px; /* Adjust distance from the navbar */
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    border: 2px solid black; /* Fix border */
+    width: 80%;
+    max-width: 900px; /* Adjust size */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.inside-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 300px; /* Adjusted for better visibility */
+    height: auto;
+    border-radius: 5px;
+}
+
+.info {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+/* Info text styling */
+.info-coming {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    
+    /* Reduce margin so content isn't too spaced out */
+    .span-event {
+        font-size: 32px; /* Slightly smaller for mobile */
+        margin-top: 55px; /* Reduce space from navbar */
+        margin-bottom: 15px;
+    }
+
+    .big-container {
+        margin-top: 50px; /* Reduce extra spacing */
+        gap: 10px; /* Smaller gaps between elements */
+    }
+
+    .box {
+        width: 95%; /* Make boxes fit screen width */
+        padding: 20px; /* Reduce padding to save space */
+    }
+
+    h2 {
+        font-size: 22px; /* Reduce heading size for mobile */
+        text-align: center;
+    }
+
+    .inside-box {
+        flex-direction: column; /* Stack image and text on top of each other */
+        align-items: center; /* Center elements */
+        text-align: center;
+    }
+
+    .photo {
+        width: 90%; /* Make images responsive */
+        max-width: 400px; /* Prevent them from getting too big */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px;
+    }
+
+    .info {
+        max-width: 100%; /* Ensure text takes full width */
+        font-size: 16px; /* Adjust text size for readability */
+        text-align: center; /* Center text for a cleaner layout */
+    }
+
+    .info p {
+        margin-bottom: 8px; /* Reduce space between paragraphs */
+    }
+
+    /* Adjust footer */
+    .footer {
+        font-size: 14px; /* Make footer text readable */
+        padding: 15px; /* Reduce extra padding */
+    }
+}

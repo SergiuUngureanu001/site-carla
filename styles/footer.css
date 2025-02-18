@@ -1,0 +1,31 @@
+.footer {
+    background-color: hsl(0, 0%, 0%);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+p {
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff; 
+    transition: color 0.3s ease; 
+}
+
+.social-media a[aria-label="Facebook"]:hover {
+    color: #1877F2; 
+}
+
+.social-media a[aria-label="Youtube"]:hover {
+    color: #FF0000; 
+}
