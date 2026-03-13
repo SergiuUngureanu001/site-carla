@@ -25,7 +25,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../photos/home.jpg") no-repeat center center;
+    /* Aici am modificat numele imaginii */
+    background: url("../photos/carla-homepage.jpeg") no-repeat center center;
     background-size: cover; 
     background-attachment: fixed; 
     background-color: black; 
@@ -58,7 +59,7 @@ h1 {
     text-align: right;
 }
 
-
+/* --- Varianta pentru tablete și telefoane --- */
 @media (max-width: 768px) {
 
     .hero {
@@ -72,11 +73,13 @@ h1 {
     }
 
     .background {
-        background-size: contain; 
-        background-position: center;
+        /* Am schimbat "contain" cu "cover" pentru a nu avea margini negre pe mobil */
+        background-size: cover; 
+        background-position: center center;
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
+        background-attachment: scroll; /* Pe mobil, uneori "fixed" face probleme, "scroll" e mai sigur */
     }
 
     h1 {
@@ -86,7 +89,7 @@ h1 {
     }
 
     .subtitle {
-        font-size: 1.2rem; /* Reduce subtitle */
+        font-size: 1.2rem; 
     }
 
     .text-overlay {
@@ -94,7 +97,8 @@ h1 {
         padding: 20px;
         position: absolute; 
         z-index: 2;
-        text-align: left; /* Align text to the left */
+        text-align: left; 
+        align-items: flex-start; /* Am aliniat textul la stânga pentru mobil */
     }
 
     body {
@@ -112,6 +116,7 @@ h1 {
     }
 }
 
+/* --- Varianta pentru ecrane foarte mici --- */
 @media (max-width: 480px) {
     .text-overlay {
         left: 5%;
@@ -119,7 +124,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5rem; /* Even smaller for very small screens */
+        font-size: 1.5rem; 
     }
 
     .subtitle {
