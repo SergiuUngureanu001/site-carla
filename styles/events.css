@@ -60,19 +60,22 @@ h2 span {
     align-items: center;
     gap: 20px;
     text-align: left;
-    justify-content: space-between;
+    /* remove justify-content: space-between */
 }
 
 .photo {
-    width: 300px; /* Adjusted for better visibility */
+    width: 45%;          
+    max-width: 300px;    
+    flex-shrink: 0;      
     height: auto;
     border-radius: 5px;
 }
 
 .info {
+    flex: 1;             
     font-size: 18px;
     line-height: 1.6;
-    max-width: 400px;
+    min-width: 0;        
 }
 
 .info p {
